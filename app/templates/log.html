@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+{% block content %}
+  {% if user.name %}
+    <p>
+      Welcome {{ user.name }}!
+    </p>
+  {% else %}
+    <div>
+      Login
+    </div>
+    <div>
+      Register
+    </div>
+  {% endif %}
+{% endblock %}

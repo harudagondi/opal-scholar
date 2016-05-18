@@ -11,3 +11,10 @@ def home():
 def about():
     return render_template("about.html",
                            title="About")
+
+@app.route("/log")
+def log():
+    user = None
+    return render_template("log.html",
+                           title="Login",
+                           user=user)

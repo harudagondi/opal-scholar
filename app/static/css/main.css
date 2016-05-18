@@ -1,10 +1,10 @@
 body {
-  background-color: #b4f9dc;
+  background-color: #55f2b0;
   font-family: sans-serif; }
 
 #title {
-  font-family: monofur, monospace;
-  text-align: center; }
+  text-align: center;
+  font-family: monofur, monospace; }
 
 nav {
   text-decoration: none;
@@ -16,10 +16,16 @@ nav {
       padding: 12px 14px;
       text-decoration: none; }
       nav ul li a {
-        color: white;
-        text-decoration: none; }
+        text-decoration: none;
+        color: white; }
         nav ul li a:visited {
           text-decoration: none;
           color: white; }
+
+#content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #b4f9dc; }
 
 /*# sourceMappingURL=main.css.map */
