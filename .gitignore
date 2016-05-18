@@ -2,3 +2,4 @@ flaskapp/
 app/__pycache__/
 app/static/css/.sass-cache
 app/static/css/main.css.map
+app/static/css/login.css.map

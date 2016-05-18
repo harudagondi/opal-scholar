@@ -5,11 +5,16 @@
       Welcome {{ user.name }}!
     </p>
   {% else %}
-    <div>
-      Login
-    </div>
-    <div>
-      Register
-    </div>
+  <div id="login">
+    <h2>Login</h2>
+    <h5>Username</h5>
+    <input id="login-username" type="text"/>
+    <h5>Password</h5>
+    <input id="login-password" type="password"/>
+  </div>
+  <div>
+    <h3>Register</h3>
+    <input type="text"/>
+  </div>
   {% endif %}
 {% endblock %}

@@ -1,0 +1,11 @@
+$opal: rgb(38, 238, 154);
+$opal-lightest: lighten($opal, 30%);
+$opal-lighter: lighten($opal, 20%);
+$opal-light: lighten($opal, 10%);
+$opal-dark: darken($opal, 10%);
+$opal-darker: darken($opal, 20%);
+$opal-darkest: darken($opal, 30%);
+
+#login {
+    background-color: darken($opal, 15%);
+}
