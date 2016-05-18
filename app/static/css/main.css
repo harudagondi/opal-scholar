@@ -1,7 +1,25 @@
 body {
-  background-color: #b4f9dc; }
+  background-color: #b4f9dc;
+  font-family: sans-serif; }
 
-nav ul li {
-  display: inline-block; }
+#title {
+  font-family: monofur, monospace;
+  text-align: center; }
+
+nav {
+  text-decoration: none;
+  background-color: #097246; }
+  nav ul {
+    text-decoration: none; }
+    nav ul li {
+      display: inline-block;
+      padding: 12px 14px;
+      text-decoration: none; }
+      nav ul li a {
+        color: white;
+        text-decoration: none; }
+        nav ul li a:visited {
+          text-decoration: none;
+          color: white; }
 
 /*# sourceMappingURL=main.css.map */

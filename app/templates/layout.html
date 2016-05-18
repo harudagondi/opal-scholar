@@ -3,13 +3,22 @@
   <head>
     <title> {{ title }} - Opal Scholar </title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
-    
+
   </head>
 
   <body>
-    <h1> Opal Scholar </h1>
+    <h1 id="title"> Opal Scholar </h1>
 
-    {% block content %}
-    {% endblock %}
+    <nav>
+      <ul>
+        <li><a href="home"> Home </a></li>
+        <li><a href="about"> About </a></li>
+      </ul>
+    </nav>
+
+    <div>
+      {% block content %}
+      {% endblock %}
+    </div>
   </body>
 </html>
