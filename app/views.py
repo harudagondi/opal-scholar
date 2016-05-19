@@ -12,7 +12,7 @@ def about():
     return render_template("about.html",
                            title="About")
 
-@app.route("/log")
+@app.route("/")
 def log():
     user = {"name": "Vanitelia Exodus", "password": "hunter2"}
     return render_template("log.html",

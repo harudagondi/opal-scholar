@@ -1,0 +1,13 @@
+@import "colors";
+
+#sidebar {
+    min-width: 100px;
+    max-width: 300px;
+    height: 100%;
+
+    border-width: 2px;
+    font-size: 10pt;
+
+    background-color: $opal-lightest;
+    float:right;
+}

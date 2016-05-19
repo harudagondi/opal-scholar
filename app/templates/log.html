@@ -1,5 +1,5 @@
 {% extends "layout.html" %}
-{% block content %}
+{% block sidebar %}
   {% if user.name %}
     <p>
       Welcome {{ user.name }}!
@@ -11,10 +11,6 @@
     <input id="login-username" type="text"/>
     <h5>Password</h5>
     <input id="login-password" type="password"/>
-  </div>
-  <div>
-    <h3>Register</h3>
-    <input type="text"/>
   </div>
   {% endif %}
 {% endblock %}
