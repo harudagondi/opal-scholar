@@ -2,7 +2,7 @@
 <html>
   <head>
     <title> {{ title }} - Opal Scholar </title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.min.css') }}">
 
   </head>
 
@@ -18,6 +18,11 @@
 
     <div id="content">
       {% block content %}
+      {% endblock %}
+    </div>
+
+    <div id="sidebar">
+      {% block sidebar %}
       {% endblock %}
     </div>
   </body>
