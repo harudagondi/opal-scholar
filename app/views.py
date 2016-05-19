@@ -14,7 +14,7 @@ def about():
 
 @app.route("/log")
 def log():
-    user = None
+    user = {"name": "Vanitelia Exodus", "password": "hunter2"}
     return render_template("log.html",
                            title="Login",
                            user=user)
