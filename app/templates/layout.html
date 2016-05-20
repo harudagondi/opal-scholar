@@ -3,7 +3,7 @@
   <head>
     <title> {{ title }} - Opal Scholar </title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.min.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/wrapper.min.css') }}">
+    <script src="{{ url_for('static', filename='js/fb.js') }}"></script>
 
   </head>
 
@@ -14,7 +14,7 @@
       <ul>
         <li><a href="home"> Home </a></li>
         <li><a href="about"> About </a></li>
-        <li><a href="login"> {{ user.section }} </a></li>
+        <li><a href="login">  </a></li>
       </ul>
     </nav>
 
@@ -22,6 +22,7 @@
       {% block content %}
       {% endblock %}
     </div>
+
 
   </body>
 </html>
