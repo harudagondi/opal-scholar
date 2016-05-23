@@ -14,7 +14,18 @@
       <ul>
         <li><a href="home"> Home </a></li>
         <li><a href="about"> About </a></li>
-        <li><a href="login">  </a></li>
+        <li>
+          {% if current_user.is_authenticated %}
+            <a href="login"> Logout </a>
+            {% if current_user.section %}
+              <li><a href="{{ url_for( '{{ current_user.section }}' ) }}"> {{ current_user.section }} </a></li>
+            {% else %}
+              <li><a> Sections </a></li>
+            {% endif %}
+          {% else %}
+            <a href="login"> Login </a>
+          {% endif %}
+        </li>
       </ul>
     </nav>
 
